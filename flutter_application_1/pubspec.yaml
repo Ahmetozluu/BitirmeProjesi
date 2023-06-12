@@ -39,6 +39,7 @@ dependencies:
   #get
   get: ^4.6.5
   video_player: ^2.6.1
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:

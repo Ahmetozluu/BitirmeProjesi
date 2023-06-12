@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/data/menu_data.dart';
 import 'package:flutter_application_1/widgets/appbar.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
 import 'package:flutter_application_1/widgets/title_widget.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -11,6 +13,7 @@ class ListTwoView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appbarWidget(),
+      drawer: drawer(),
       body: ListView(
         children: [
           inkListCardTwo(
