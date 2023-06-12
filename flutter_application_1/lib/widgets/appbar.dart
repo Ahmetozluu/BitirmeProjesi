@@ -9,7 +9,7 @@ PreferredSize appbarWidget() {
       iconTheme: IconThemeData(color: AppTheme.light.colorScheme.primary),
       backgroundColor: Colors.white,
       centerTitle: true,
-      title: Image.asset("assets/images/gural-logo.png"),
+      title: Image.asset("assets/logo/logo_appbar.png"),
     ),
   );
 }
