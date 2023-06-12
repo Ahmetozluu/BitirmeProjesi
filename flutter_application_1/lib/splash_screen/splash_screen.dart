@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
                   left: Get.width / 20,
                   child: InkWell(
                     onTap: () {
-                      Get.toNamed(AppRoutes.ListTwoView);
+                      Get.toNamed(AppRoutes.login);
                     },
                     child: Container(
                         width: Get.width / 1.1,
