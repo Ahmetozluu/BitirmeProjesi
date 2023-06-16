@@ -17,26 +17,28 @@ class ListTwoView extends StatelessWidget {
       body: ListView(
         children: [
           inkListCardTwo(
-            titleName: 'Deluxe Aile',
-            description: 'D .',
-          )
-          //image: 'assets/images/detail.jpeg'),
-          /*listCardTwo(
-              titleName: 'Deluxe Aile ',
-              description:
-                  'Deluxe odadaki tüm donanıma sahip olup, iki ayrı yataktan oluşan ilave bir yatak odası bulunmaktadır. İkinci odada ayrıca LCD-TV ve minibar mevcuttur.',
-              image: 'assets/images/detail.jpeg'),
-          listCardTwo(
-              titleName: 'Deluxe Aile Odası',
-              description:
-                  'Deluxe odadaki tüm donanıma sahip olup, iki ayrı yataktan oluşan ilave bir yatak odası bulunmaktadır. İkinci odada ayrıca LCD-TV ve minibar mevcuttur.',
-              image: 'assets/images/detail.jpeg')*/
+              ad: "Ahmet", soyad: "Özlü", odano: "809", durum: 'Giriş Yapıldı', anarenk: Colors.green, resimid: 2),
+          inkListCardTwo(
+              ad: "Bilgehan", soyad: "Kabakaş", odano: "808", durum: 'Çıkış Yapıldı', anarenk: Colors.red, resimid: 1),
+          inkListCardTwo(
+              ad: "Alaattin",
+              soyad: "Kızılboğa",
+              odano: "807",
+              durum: 'Giriş Yapıldı',
+              anarenk: Colors.green,
+              resimid: 3),
         ],
       ),
     );
   }
 
-  InkWell inkListCardTwo({String? titleName, String? image, String? description}) {
+  InkWell inkListCardTwo(
+      {required String ad,
+      required String soyad,
+      required String odano,
+      required String durum,
+      required Color anarenk,
+      required int resimid}) {
     return InkWell(
       onTap: () {},
       child: Card(
@@ -44,24 +46,24 @@ class ListTwoView extends StatelessWidget {
           margin: const EdgeInsets.all(8.0),
           child: Container(
             padding: const EdgeInsets.all(10.0),
-            child: const Expanded(
+            child: Expanded(
               child: Column(
                 children: [
                   Text(
-                    'Giris yapıldı',
-                    style: TextStyle(color: Colors.green),
+                    '$durum',
+                    style: TextStyle(color: anarenk),
                   ),
                   ListTile(
                     leading: CircleAvatar(
                       radius: 35,
-                      backgroundImage: AssetImage('assets/jpg/avatar.jpg'),
+                      backgroundImage: AssetImage('assets/png/$resimid.png'),
                     ),
                     title: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Ad: Ahmet'),
-                        Text('Soyad: Özlü'),
-                        Text('Oda No: 809'),
+                        Text('Ad:' + '   $ad'),
+                        Text('Soyad:' + '   $soyad'),
+                        Text('Oda no:' + '  $odano'),
                       ],
                     ),
                   ),

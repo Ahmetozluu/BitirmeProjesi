@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'controller/app_controller.dart';
-import 'kullanici_list.dart';
 import 'routes/routes.dart';
 import 'utils/app_routes.dart';
 
@@ -16,7 +15,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'GSB Yurtları',

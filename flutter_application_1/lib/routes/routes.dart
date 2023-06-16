@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/kullanici_list.dart';
 import 'package:flutter_application_1/splash_screen/splash_screen.dart';
 import 'package:flutter_application_1/widgets/contact/contact.dart';
 import 'package:get/get.dart';
 
 import '../login/login.dart';
+import '../screen/kullanici_list.dart';
 import '../utils/app_routes.dart';
 
 routes() => [
